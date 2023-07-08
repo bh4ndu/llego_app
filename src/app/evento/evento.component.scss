@@ -1,0 +1,19 @@
+
+section {
+    background: linear-gradient(purple, black);
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap');
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+button {
+    border: 10;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: yellow;
+    background-color: black;
+    color: white;
+    width: 140px;
+    height: 30px;
+    font-size: 15px;
+}

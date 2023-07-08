@@ -1,0 +1,35 @@
+<body>
+    <section class="container">
+        <h1>REGISTRATE A LLEGO</h1>
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/por-que-el-espacio-es-frio-1617903788.jpg">
+        <br>
+        <form #f="ngForm" (ngSubmit)="enviar(f)">
+            <label>nombre</label>
+            <input type="text" placeholder="nombre" name="nombre" ngModel>
+            <label>apellido</label>
+            <input type="text" placeholder="apellido" name="apellido" ngModel>
+            <label>correo</label>
+            <input type="email" placeholder="correo" name="correo" ngModel>
+            <label>contrasena</label>
+            <input type="password" placeholder="contrasena" name="contrasena" ngModel>
+            <label>fecha de nacimiento</label>
+            <input type="date" placeholder="fecha de nacimiento" name="fecha_nacimiento" ngModel>
+            <label>telefono</label>
+            <input type="text" placeholder="telefono" name="telefono" ngModel>
+            <label>plata</label>
+            <input type="number" placeholder="plata" name="plata" ngModel>
+            <label>ciudad</label>
+            <input type="text" placeholder="ciudad" name="ciudad" ngModel>
+            <label>yape</label>
+            <input type="number" placeholder="yape" name="yape" ngModel>
+            <label>plin</label>
+            <input type="number" placeholder="plin" name="plin" ngModel>
+            <label>genero</label>
+            <input type="text" placeholder="genero" name="genero" ngModel>
+            <button type="button" routerLink="" >iniciar sesion</button>
+            <button type="submit" name="registrarse" >registrate</button>
+        </form>
+        
+    </section>
+
+</body>

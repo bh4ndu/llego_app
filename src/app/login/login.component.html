@@ -1,0 +1,18 @@
+<body>
+    <section class="container">
+        <h1>LOGEATE A LLEGO</h1>
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/por-que-el-espacio-es-frio-1617903788.jpg">
+        <br>
+        <form #f="ngForm" (ngSubmit)="enviar(f)">
+            <input type="email" placeholder="login" name="login" ngModel>
+            <br>
+            <input type="password" placeholder="contrasena" name="contrasena" ngModel>
+            <br>
+            <button type="submit" routerLink="/listado" >iniciar sesion</button>
+            <button type="button" routerLink="/registro" >registrate</button>
+
+        </form>
+        
+    </section>
+
+</body>

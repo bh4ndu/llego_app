@@ -1,0 +1,25 @@
+<body> 
+    
+    <section class="container">
+        <div class="tarjeta" *ngFor="let fila of eventos">
+            <h3>nombre: {{fila.nombre}}</h3> 
+            <h3>descripcion: {{fila.descripcion}}</h3>
+            <h3>fecha: {{fila.fecha}}</h3>
+            <h3>hora: {{fila.hora}}</h3>
+            <h3>direccion: {{fila.direccion}}</h3>
+            <h3>referencia: {{fila.referencia}}</h3>
+            <h3>organizador: {{fila.organizador}}</h3>
+            <h3>requisitos: {{fila.requisitos}}</h3>
+            <h3>motivo: {{fila.motivo}}</h3>
+            <h3>costo total: {{fila.costo_total}}</h3>
+            <select name="" id="">
+                <option value="">asistire</option>
+                <option value="">no ire</option>
+                <option value="">en duda</option>
+            </select>
+            <a routerLink="/evento/{{fila.id}}">info</a>
+            <br>
+        </div>
+        
+    </section>
+</body>

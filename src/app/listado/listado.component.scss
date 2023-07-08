@@ -1,0 +1,91 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(purple, black);
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap');
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px ;
+}
+
+.tarjeta h3 {
+    align-items: baseline;
+}
+
+.tarjeta select {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+    margin-right: 10px;
+}
+
+.tarjeta {
+    color: white;
+    background-color: red;
+    border-width: 7px;
+    border-color: gold;
+    border-style: solid;
+    width: 600px;
+    height: 900px;
+    font-size: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    border-radius: 10px;
+    
+}
+
+.tarjeta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        45deg,
+        red, blue, deeppink, blue,
+        red, blue, deeppink, blue  
+    );
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+ 0% {
+    background-position: 0 0;
+ }
+ 
+ 50% {
+    background-position: 400% 0;
+ }
+
+ 100% {
+    background-position: 0 0;
+ }
+}
+
+a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-width: 3px;
+    border-color: black;
+    border-style: solid;
+}
